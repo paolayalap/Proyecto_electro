@@ -1,0 +1,36 @@
+% SOLUTION OF LAPLACE'S EQUATION
+% ------------------------------
+% THIS PROGRAM SOLVES THE TWO -DIMENSIONAL 
+% BOUNDARY-VALUE PROBLEM DESCRIBED IN FIG. 6.5
+% a AND b ARE THE DIMENSIONS OF THE TROUGH
+% x AND y ARE THE COORDINATES OF THE POINT
+% OF INTEREST
+
+P = [];
+Vo = 100.0;
+a = 1.0;
+b = input('El valor de la variable "a" será 1 para este cálculo, \npor favor introduzca un valor para la variable "b" del 1 al 5:   ');
+h = input('Introduzca un valor para "x", debe elegir entre 0.25, 0.50 o 0.75 :  ');
+i = input('Introduzca un valor para "y", debe elegir entre 0.25, 0.50 o 0.75 :  ');
+c = 4.*Vo/pi
+sum = 0.0;
+
+for k=1:5
+    n = 2*k - 1
+    a1 = sin(n*pi*h/b);
+    a2 = sinh(n*pi*i/b);
+    a3 = n*sinh(n*pi*a/b);
+    sum = sum + c*a1*a2/a3;
+    P = [n, sum]
+end
+diary test.out
+
+P
+
+%x = n;
+%y = sum;
+%plot(n, sum), title('POTENCIAL'), xlabel('Valores de n'), ylabel('Resultante de la suma'), grid
+    
+diary off
+
+  
