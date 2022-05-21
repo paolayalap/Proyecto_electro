@@ -1,0 +1,24 @@
+%Escenarios 
+x = [6.7720, 6.7973, 6.7972, 6.7972, 6.7972];
+y = [1,3,5,7,9];
+plot(x, y), title('ESCENARIO 1'), xlabel('Resultado de la suma'), ylabel('Valores de n');
+
+figure;
+x1 = [8.5299, 9.5656, 9.6294, 9.6312, 9.6311];
+y1 = [1,3,5,7,9];
+plot(x1, y1), title('ESCENARIO 2'), xlabel('Resultado de la suma'), ylabel('Valores de n');
+
+figure;
+x2 = [6.9845, 9.2418, 9.6911, 9.7612, 9.7697];
+y2 = [1,3,5,7,9];
+plot(x2, y2), title('ESCENARIO 3'), xlabel('Resultado de la suma'), ylabel('Valores de n');
+
+figure;
+x3 = [5.6508, 8.4638, 9.4214, 9.6917, 9.7589];
+y3 = [1,3,5,7,9];
+plot(x3, y3), title('ESCENARIO 4'), xlabel('Resultado de la suma'), ylabel('Valores de n');
+
+figure;
+x4 = [4.6855, 7.6135, 8.9679, 9.5001, 9.6893];
+y4 = [1,3,5,7,9];
+plot(x4, y4), title('ESCENARIO 5'), xlabel('Resultado de la suma'), ylabel('Valores de n');
